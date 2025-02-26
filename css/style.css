@@ -22,16 +22,34 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* Menu */
 
 .menu {
   background: #252525;
+  padding: 15px 0;
+}
+
+.menu-nav ul {
+  float: right;
+}
+
+.menu-nav li {
+  display: inline-block;
+  color: #fff;
 }
 
 .menu-nav a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.125em;
+  font-size: 1.125rem;
+  padding: 10px;
+  margin-left: 10px;
+  display: block;
 }
 
 /* Intro */
@@ -40,6 +58,8 @@ body {
   background: url("../img/bg-intro.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
+  padding: 50px 0;
+  text-align: center;
 }
 
 .intro h1 {
@@ -53,6 +73,7 @@ body {
   width: 20px;
   height: 4px;
   background: #fff;
+  margin: 10px auto;
 }
 
 .intro p {
@@ -198,4 +219,22 @@ h2.produtos-mineiro::before {
 .footer p {
   font-size: 1.125em;
   line-height: 1.4em;
+}
+
+/* Responsive */
+
+@media (max-width: 739px) {
+  .intro {
+    padding: 50px 0px;
+  }
+
+  .menu-nav ul {
+    float: none;
+  }
+
+  .menu-nav ul li a {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 8px;
+  }
 }
