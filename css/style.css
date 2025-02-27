@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
 @import url(/css/grid.css);
+
 /* Reset */
 
 body,
@@ -256,6 +257,11 @@ h2.produtos-mineiro::before {
 
 .footer {
   background: #d6d3c8;
+  padding: 40px 0;
+}
+
+.footer img {
+  float: right;
 }
 
 .footer p {
@@ -278,5 +284,10 @@ h2.produtos-mineiro::before {
     margin-left: 0px;
     padding-left: 0px;
     padding-right: 8px;
+  }
+
+  .footer img {
+    float: none;
+    margin-top: 20px;
   }
 }
